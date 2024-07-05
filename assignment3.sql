@@ -136,5 +136,3 @@ select c.course_id, c.course_name,e.enrollment_count, Dense_rank() over
 course_id from enrollments group by course_id) e
 on c.course_id = e.course_id;
 
-
-
